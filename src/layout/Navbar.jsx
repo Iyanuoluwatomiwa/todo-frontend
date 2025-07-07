@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useContext } from "react";
-import { NavLink, Link } from "react-router-dom"; 
+import { NavLink, Link } from "react-router-dom";
 import { StoreContext } from "../context/StoreContext";
 import { FaTasks } from "react-icons/fa";
 
@@ -20,7 +20,7 @@ function Navbar() {
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <Link to="/" className="flex items-center">
           <FaTasks className="mr-3 h-6 sm:h-9 text-yellow-500" />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             Todo App
           </span>
         </Link>
