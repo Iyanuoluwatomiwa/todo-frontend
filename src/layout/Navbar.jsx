@@ -67,6 +67,24 @@ function Navbar() {
                 </li>
                 <li>
                   <NavLink
+                    to="/profile"
+                    className="block py-2 px-3 text-white hover:text-yellow-400"
+                    activeclassname="active"
+                  >
+                    Profile
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/wallet"
+                    className="block py-2 px-3 text-white hover:text-yellow-400"
+                    activeclassname="active"
+                  >
+                    Wallet
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to="/signout"
                     className="block py-2 px-3 text-white hover:text-yellow-400"
                     activeclassname="active"

@@ -10,6 +10,11 @@ import { useContext } from "react";
 import { StoreContext } from "./context/StoreContext";
 import Signout from "./layout/Signout";
 import Todo from "./pages/Todo";
+import Wallet from "./pages/Wallet";
+import Profile from "./pages/Profile";
+
+{/* <Route path="/profile" element={isAuth ? <Profile /> : <Login />} />; */}
+
 
 function App() {
   const { isAuth } = useContext(StoreContext);
@@ -29,6 +34,9 @@ function App() {
             path="/dashboard"
             element={isAuth ? <Dashboard /> : <Login />}
           />
+          <Route path="/profile" element={isAuth ? <Profile /> : <Login />} />
+          <Route path="/wallet" element={isAuth ? <Wallet /> : <Login />} />
+
           <Route path="/signout" element={isAuth ? <Signout /> : <Login />} />
           <Route path="/todo/:todoId" element={isAuth ? <Todo /> : <Login />} />
         </Routes>
